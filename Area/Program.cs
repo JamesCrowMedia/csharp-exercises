@@ -16,7 +16,7 @@ namespace Area
             
             do
             {
-                Console.Write("Enter a radius: ");
+                Console.Write("Enter a radius: "); 
                 rad_str = Console.ReadLine();
 
                 bool test = double.TryParse(rad_str, out rad);
