@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DayPrinter", "DayPrinter\DayPrinter.csproj", "{B3E76AAA-3BE8-49C7-A831-64EF68C6F28D}"
 EndProject
@@ -36,6 +36,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintArray", "PrintArray\PrintArray.csproj", "{00D6D90C-48A3-41F6-97D3-5A5A7C6A1A12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradebookEx", "GradebookEx\GradebookEx.csproj", "{1289FD2A-7E2A-4B48-BF62-E54C48FBF10C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingChar", "CountingChar\CountingChar.csproj", "{621555AF-FEE0-4457-B6DA-7652B490865E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddLists", "AddLists\AddLists.csproj", "{064D2861-4003-4E4A-836C-E95E33BAE1A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School", "School\School.csproj", "{6CF8601D-1B3D-4B42-8F82-FEECCE71FA57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +117,18 @@ Global
 		{1289FD2A-7E2A-4B48-BF62-E54C48FBF10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1289FD2A-7E2A-4B48-BF62-E54C48FBF10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1289FD2A-7E2A-4B48-BF62-E54C48FBF10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621555AF-FEE0-4457-B6DA-7652B490865E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621555AF-FEE0-4457-B6DA-7652B490865E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621555AF-FEE0-4457-B6DA-7652B490865E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621555AF-FEE0-4457-B6DA-7652B490865E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064D2861-4003-4E4A-836C-E95E33BAE1A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064D2861-4003-4E4A-836C-E95E33BAE1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064D2861-4003-4E4A-836C-E95E33BAE1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064D2861-4003-4E4A-836C-E95E33BAE1A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF8601D-1B3D-4B42-8F82-FEECCE71FA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF8601D-1B3D-4B42-8F82-FEECCE71FA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF8601D-1B3D-4B42-8F82-FEECCE71FA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF8601D-1B3D-4B42-8F82-FEECCE71FA57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
