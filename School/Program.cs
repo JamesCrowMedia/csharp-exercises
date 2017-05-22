@@ -10,6 +10,17 @@ namespace School
     {
         public class Student
         {
+            public override string ToString()
+            {
+                return String.Format("ID# {0}: {1} - {2} - GPA: {3}", StudentId, Name, GetGradeLevel(), Gpa);
+            }
+
+            public override bool Equals(object o)
+            {
+                Student s2 = o as Student;
+                return StudentId == s2.StudentId;
+            }
+
             private string firstName;
             private string lastName;
             public string Name
@@ -42,8 +53,28 @@ namespace School
             private double gpa;
             public double Gpa { get { return gpa; } set { gpa = value; } }
 
+            public void AddGrade(int courseCredits, double grade)
+            {
+                double qualityPoints = gpa * numberOfCredits;
+                numberOfCredits += courseCredits;
+                qualityPoints += grade;
+                gpa = qualityPoints / Convert.ToDouble(numberOfCredits);
+            }
 
-            public Student(string firstName, string lastName, int Id, int numberOfCredits=0, double gpa = 0.0)
+            public string GetGradeLevel()
+            {
+                if (numberOfCredits < 30) { return String.Format("Credits: {0} - Freshman", numberOfCredits); }
+                else if (numberOfCredits < 60) { return String.Format("Credits: {0} - Sophmore", numberOfCredits); }
+                else if (numberOfCredits < 90) { return String.Format("Credits: {0} - Junior", numberOfCredits); }
+                else { return String.Format("Credits: {0} - Senior", numberOfCredits); }
+
+            }
+
+            public Student(string firstName, 
+                            string lastName, 
+                            int Id, 
+                            int numberOfCredits=0, 
+                            double gpa = 0.0)
             {
                 FirstName = firstName;
                 LastName = lastName;
@@ -61,6 +92,16 @@ namespace School
                 get { return courseId; }
             }
 
+            public override string ToString()
+            {
+                return String.Format("{0}: {1}", CourseId, Title);
+            }
+
+            public override bool Equals(object o)
+            {
+                Course c2 = o as Course;
+                return CourseId == c2.CourseId;
+            }
 
             private string title;
             public string Title
@@ -89,13 +130,23 @@ namespace School
         }
         static void Main(string[] args)
         {
-            Student newStudent1 = new Student("Kasey", "Oglesby", 1234);
-            Student newStudent2 = new Student("James", "Crow", 2345);
-            Student newStudent3 = new Student("Andy", "Russell", 3456);
+            Student newStudent1 = new Student("Kasey", "Oglesby", 1234, 29, 3.9);
+            Student newStudent2 = new Student("James", "Crow", 2345, 60, 3.7);
+            Student newStudent3 = new Student("Andy", "Russell", 3456, 91, 3.9);
 
-            Console.WriteLine("ID# {0}: {1} - Credits: {2} - GPA: {3}", newStudent1.StudentId, newStudent1.Name, newStudent1.NumberOfCredits, newStudent1.Gpa);
-            Console.WriteLine("ID# {0}: {1} - Credits: {2} - GPA: {3}", newStudent2.StudentId, newStudent2.Name, newStudent2.NumberOfCredits, newStudent2.Gpa);
-            Console.WriteLine("ID# {0}: {1} - Credits: {2} - GPA: {3}", newStudent3.StudentId, newStudent3.Name, newStudent3.NumberOfCredits, newStudent3.Gpa);
+            Console.WriteLine(newStudent1.ToString());
+            Console.WriteLine(newStudent2.ToString());
+            Console.WriteLine(newStudent3.ToString());
+
+            Console.ReadLine();
+
+            newStudent1.AddGrade(3, 2.0);
+            newStudent2.AddGrade(3, 4.0);
+            newStudent3.AddGrade(3, 3.0);
+
+            Console.WriteLine(newStudent1.ToString());
+            Console.WriteLine(newStudent2.ToString());
+            Console.WriteLine(newStudent3.ToString());
 
             Console.ReadLine();
 
@@ -104,7 +155,7 @@ namespace School
             newCourse.Enroll(newStudent2);
             newCourse.Enroll(newStudent3);
 
-            Console.WriteLine("{0}: {1}\n**********", newCourse.CourseId, newCourse.Title);
+            Console.WriteLine(newCourse.ToString());
 
             Console.ReadLine();
 
