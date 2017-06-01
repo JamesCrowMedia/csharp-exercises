@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School", "School\School.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantMenu", "ResturantMenu\ResturantMenu.csproj", "{F10D8130-7E4B-4F01-8643-840BF0EEE289}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractShapes", "AbstractShapes\AbstractShapes.csproj", "{DDE55368-F125-4CF1-8D64-E30ABF5D41A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{F10D8130-7E4B-4F01-8643-840BF0EEE289}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F10D8130-7E4B-4F01-8643-840BF0EEE289}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F10D8130-7E4B-4F01-8643-840BF0EEE289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE55368-F125-4CF1-8D64-E30ABF5D41A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE55368-F125-4CF1-8D64-E30ABF5D41A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE55368-F125-4CF1-8D64-E30ABF5D41A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE55368-F125-4CF1-8D64-E30ABF5D41A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
