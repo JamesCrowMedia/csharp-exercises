@@ -10,7 +10,7 @@ namespace QuizTime
     {
         static void Main(string[] args)
         {
-            TrueOrFalse question1 = new TrueOrFalse("Is it true?", "", "True");
+            Question question1 = new TrueOrFalse("Is it true?", "", "True");
             Console.WriteLine(question1.ReadQuestiion());
             string input = Console.ReadLine();
 
@@ -23,6 +23,18 @@ namespace QuizTime
                 Console.WriteLine("You got it wrong!");
             }
 
+            Question question2 = new MultiChoice("Choose red.", "Red|Green|Blue", "Red");
+            Console.WriteLine(question2.ReadQuestiion());
+            string input2 = Console.ReadLine();
+
+            if (question2.IsCorrect(input2))
+            {
+                Console.WriteLine("You got it right!");
+            }
+            else
+            {
+                Console.WriteLine("You got it wrong!");
+            }
 
             Console.ReadLine();
         }

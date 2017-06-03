@@ -26,7 +26,7 @@ namespace QuizTime
                 allChoices.Append(String.Format("| {0}  ", this.choices[i]));
             }
 
-            return String.Format("Q:{0}\nPick One: {1}", GetQuestion, allChoices);
+            return String.Format("Q: {0}\nPick One: {1}", GetQuestion, allChoices);
         }
 
         public virtual bool IsCorrect(string input)
