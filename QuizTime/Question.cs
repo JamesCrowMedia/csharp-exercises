@@ -31,7 +31,7 @@ namespace QuizTime
 
         public virtual bool IsCorrect(string input)
         {
-            List<string> userAnswer = input.Split('|').ToList();
+            List<string> userAnswer = this.SplitToList(input); ;
             userAnswer.Sort();
 
             if (userAnswer.Count() != answer.Count())
@@ -52,11 +52,15 @@ namespace QuizTime
             return true;
         }
 
+        private List<string> SplitToList(string inputString, char splitChar = '|')
+        {
+            return inputString.Split(splitChar).ToList();
+        }
 
         public Question(string question, string choices, string answer)
         {
-            List<string> answerList = answer.Split('|').ToList();
-            List<string> choicesList = choices.Split('|').ToList();
+            List<string> answerList = this.SplitToList(answer);
+            List<string> choicesList = this.SplitToList(choices);
             this.question = question;
             this.choices = choicesList;
             this.answer = answerList;
