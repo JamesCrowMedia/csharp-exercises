@@ -4,7 +4,7 @@ namespace AbstractShapes
 {
     class Program
     {
-        public class Shape
+        public abstract class Shape
         {
             private Point origin;
             public Point Origin{ get{ return origin; } set{ origin = value;} }
@@ -82,22 +82,18 @@ namespace AbstractShapes
 
         static void Main(string[] args)
         {
-            Shape newShape = new Shape(1, 4);
-            Console.WriteLine(newShape.ToString());
-
-            Console.WriteLine("*****");
-
-            Square newSquare = new Square(20, 1, 4);
+            
+            Shape newSquare = new Square(20, 1, 4);
             Console.WriteLine(newSquare.ToString());
 
             Console.WriteLine("*****");
 
-            Rectangle newRect = new Rectangle(20, 30, 1, 4);
+            Square newRect = new Rectangle(20, 30, 1, 4);
             Console.WriteLine(newRect.ToString());
 
             Console.WriteLine("*****");
 
-            Circle newCirc = new Circle(20, 1, 4);
+            Shape newCirc = new Circle(20, 1, 4);
             Console.WriteLine(newCirc.ToString());
 
             Console.ReadLine();

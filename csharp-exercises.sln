@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResturantMenu", "ResturantM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractShapes", "AbstractShapes\AbstractShapes.csproj", "{DDE55368-F125-4CF1-8D64-E30ABF5D41A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizTime", "QuizTime\QuizTime.csproj", "{D1E330C3-ADA3-4E0E-BD6D-47C1ECD26738}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{DDE55368-F125-4CF1-8D64-E30ABF5D41A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDE55368-F125-4CF1-8D64-E30ABF5D41A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDE55368-F125-4CF1-8D64-E30ABF5D41A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E330C3-ADA3-4E0E-BD6D-47C1ECD26738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E330C3-ADA3-4E0E-BD6D-47C1ECD26738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E330C3-ADA3-4E0E-BD6D-47C1ECD26738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E330C3-ADA3-4E0E-BD6D-47C1ECD26738}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
