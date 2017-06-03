@@ -52,7 +52,7 @@ namespace QuizTime
             return true;
         }
 
-        private List<string> SplitToList(string inputString, char splitChar = '|')
+        protected List<string> SplitToList(string inputString, char splitChar = '|')
         {
             return inputString.Split(splitChar).ToList();
         }

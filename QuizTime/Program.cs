@@ -36,6 +36,19 @@ namespace QuizTime
                 Console.WriteLine("You got it wrong!");
             }
 
+            Question question3 = new CheckBox("Choose One through Three.", "One|Two|Three|Four|Five", "One|Two|Three");
+            Console.WriteLine(question3.ReadQuestiion());
+            string input3 = Console.ReadLine();
+
+            if (question3.IsCorrect(input3))
+            {
+                Console.WriteLine("You got it right!");
+            }
+            else
+            {
+                Console.WriteLine("You got it wrong!");
+            }
+
             Console.ReadLine();
         }
     }
